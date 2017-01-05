@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bony.test">
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.PREVENT_POWER_KEY" />
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+        android:label="Test">
+        <activity android:label="Test"
+            android:name=".MainActivity">
+            <receiver android:name=".">
+                <intent-filter>
+                    <action android:name="android.intent.action.SCREEN_OFF" />
+                    <action android:name="android.intent.action.SCREEN_ON" />
+                    <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                    <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                    <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                </intent-filter>
+            </receiver>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
