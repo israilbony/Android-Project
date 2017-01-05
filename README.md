@@ -1,0 +1,2 @@
+# Android-Project
+My project name Advance Anti-terrorist Security System Mobile Application. In this project you can save some emergency phone number.when some body is in trouble they might not have so much time, all that they have to do is pressing power button three times very quickly .This Application send message to the emergency saving number .This message contain victim location and some information..
